@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: 'Inter', sans-serif;
+}
+
+main .btn {
+  position: absolute;
+  left: 50%;
+  top: 285px;
+  transform: translateX(-50%);
+  z-index: 99999;
+  background: #fff;
+  border-radius: 30px;
+}
+
+main .btn button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border-radius: 30px;
+}
+
+main .btn #btn-next {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+main .btn #btn-prev {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+main .container {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 650px;
+  height: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+main .container .background-top {
+  width: 85%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+main .container .background-top img {
+  width: 100%;
+}
+
+main .container .card {
+  transition: 1s all ease-in-out;
+  position: absolute;
+}
+
+main .container .card .card-top {
+  margin-top: 15px;
+}
+
+main .container .card .card-top .card-image {
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+}
+
+main .container .card .card-top .card-image img {
+  width: 275px;
+}
+
+main .container .card .card-top .card-image .bg-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 350px;
+  width: 50px;
+}
+
+main .container .card .card-body {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+main .container .card .card-body .testimonial p {
+  font-size: 20px;
+  text-align: center;
+  color: #202046;
+  font-weight: 300;
+}
+
+main .container .card .card-body .testimonial .name {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+main .container .card .card-body .testimonial .occupation {
+  color: #babacf;
+  font-size: 16px;
+}
+
+main .bg-bottom img {
+  width: 75%;
+}
+
+.left {
+  transform: translateX(-1500px);
+}
+
+.right {
+  transform: translateX(1500px);
+}
+
+.center {
+  transform: translateX(0);
+}
+
+.btn-disable {
+  background: #babacf !important;
+}
+
+@media screen and (min-width: 768px) {
+  main .btn {
+    left: 55%;
+    top: 660px;
+  }
+  main .container {
+    overflow-y: hidden;
+    height: 100vh;
+    margin-top: 100px;
+  }
+  main .container .background-top {
+    width: 100%;
+    left: 1080px;
+    top: 0;
+  }
+  main .container .background-top img {
+    width: 60%;
+  }
+  main .container .card {
+    display: flex;
+    align-items: center;
+    min-height: 580px;
+  }
+  main .container .card .card-top {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9998;
+  }
+  main .container .card .card-top .card-image img {
+    width: auto;
+    margin-right: 100px;
+  }
+  main .container .card .card-top .card-image .bg-image {
+    left: -450px;
+    width: 100px;
+    top: 125px;
+  }
+  main .container .card .card-body {
+    width: 65%;
+    position: relative;
+    z-index: 9999;
+  }
+  main .container .card .card-body .testimonial p {
+    font-size: 32px;
+    text-align: start;
+    display: inline-block;
+  }
+  main .container .card .card-body .testimonial .name {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
